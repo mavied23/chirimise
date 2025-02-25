@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding-top: 0px; /* Menambahkan ruang untuk header */
     background-color: #f0f0f0; /* Abu-abu terang */
-    color: #333;
+    color: #c82727;
 }
 
 section {
@@ -22,7 +22,7 @@ section.show {
 }
 
 header {
-    background: #625756; /* Merah */
+    background: #c82727; /* Merah */
     color: white;
     padding: 20px 0;
 }
@@ -118,7 +118,7 @@ header nav ul li a {
 }
 
 footer {
-    background: #333;
+    background: #c82727;
     color: white;
     padding: 20px 0;
     text-align: center;
