@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirimise - Bisnis Anda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Chirimise</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Chirimise adalah bisnis yang menyediakan produk berkualitas tinggi dengan pelayanan terbaik.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Galeri Kami</h2>
+            <input type="text" id="search" placeholder="Cari gambar..." onkeyup="filterGallery()">
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" onclick="showImage('daging.jpg')">
+                    <img src="gambar/mozzarella.jpg" alt="Gambar 1">
+                    <p>Mozzarella Nashville</p>
+                </div>
+                <div class="gallery-item" onclick="showImage('daging1jpg')">
+                    <img src="gambar/dumpling.jpg" alt="Gambar 2">
+                    <p>Beef Kimcheesee Roll & Mashed Potato</p>
+                </div>
+                <div class="gallery-item" onclick="showImage('2mash.jpg')">
+                    <img src="gambar/mie.jpg" alt="Gambar 3">
+                    <p>Creamy Dumpling Soup</p>
+                </div>
+                <div class="gallery-item" onclick="showImage('gyoza.jpg')">
+                    <img src="gambar/gyoza.jpg" alt="Gambar 4">
+                    <p>Meltique Kimcheesee Roll & Classic Chicken Gyoza</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 >Testimoni Pelanggan</h2>
+            <div class="testimonial-item">
+                <p>"Pelayanan yang sangat memuaskan! Produk berkualitas tinggi."</p>
+                <cite>- Pelanggan A</cite>
+            </div>
+            <div class="testimonial-item">
+                <p>"Saya sangat merekomendasikan Chirimise kepada teman-teman saya."</p>
+                <cite>- Pelanggan B</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="map-container">
+        <h2>Lokasi Kami</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9524475373246!2d107.61606630000001!3d-6.896291400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7d714348c5f%3A0xc5220dfe9528d4e4!2sChiri%20Mise%2C%20Bandung%20Japanese%20Street%20Food%20%40217%20area!5e0!3m2!1sid!2sid!4v1740466816378!5m2!1sid!2sid" width="600" height="450" style="border:0; width: 100%; height: 450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+   
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Chirimise. Semua hak dilindungi.</p>
+            <p>Alamat: Jl. Contoh No. 123, Kota Contoh</p>
+            <p>Jam Buka: Senin - Jumat, 09:00 - 17:00</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

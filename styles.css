@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding-top: 0px; /* Menambahkan ruang untuk header */
+    background-color: #f0f0f0; /* Abu-abu terang */
+    color: #333;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #625756; /* Merah */
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('gambar/daging.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang gelap untuk teks */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    background: #ffffff; /* Putih */
+    color: #ff4c40; /* Merah */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #ff4c40; /* Merah */
+    color: white;
+}
+
+.about, .testimonials, .contact {
+    padding: 50px 0;
+    background-color: #ffffff; /* Putih */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 1 1 20%; /* Mengatur lebar item galeri */
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%; /* Membuat gambar responsif */
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.map-container {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
