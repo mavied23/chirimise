@@ -24,7 +24,8 @@ section.show {
 header {
     background: #c82727; /* Merah */
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
+    
 }
 
 header h1 {
@@ -40,7 +41,10 @@ header nav ul li {
     display: inline;
     margin-right: 20px;
 }
-
+header nav ul li a:hover {
+    color: #9d9493; /* Warna kuning untuk efek hover */
+    transition: color 0.2s ease-in-out;
+}
 header nav ul li a {
     color: white;
     text-decoration: none;
